@@ -1,24 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 
-  <head>
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Sample Form</title>
     <style type="text/css" media="all">
-      input[type="text"] {
-        margin: 1em 5em;
-      }
+        input[type="text"] {
+            margin: 1em 5em;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <h1>Sample Form</h1>
-    <form action="http://localhost:3000/dogs" method="POST">
-      <label> Dog Name: <input type="text" name="dogName" id="dogName" /></label><br />
-      <label> Dog Breed: <input type="text" name="dogBreed" id="dogBreed" /></label><br />
-      <input type="submit" name="submit" id="submit" value="Submit" />
+    <form action="http://localhost:3000/users" method="POST">
+        <label> Name: <input type="text" name="Name" id="name" /></label><br />
+        <label> Email: <input type="text" name="email" id="email" /></label><br />
+        <input type="submit" name="submit" id="submit" value="Submit" />
     </form>
 
-  </body>
+    <h1>Sample Form for Robots</h1>
+    <form action="http://localhost:3000/robots" method="POST">
+        <label> Name: <input type="text" name="robotName" id="name" /></label><br />
+        <label> Type: <input type="text" name="robotType" id="type" /></label><br />
+        <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
+
+
+    <h1>Sample Form for Dogs</h1>
+    <form action="http://localhost:3000/dogs" method="POST">
+        <label> Name: <input type="text" name="dogName" id="name" /></label><br />
+        <label> Breed: <input type="text" name="dogBreed" id="type" /></label><br />
+        <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
+
+    <h1>Sample Form for Cats</h1>
+    <form action="http://localhost:3000/cats" method="POST">
+        <label> Name: <input type="text" name="catName" id="name" /></label><br />
+        <label> Breed: <input type="text" name="catBreed" id="type" /></label><br />
+        <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
+</body>
 
 </html>
